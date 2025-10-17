@@ -620,6 +620,7 @@
 <h4 id="mkdocs-build"><code>mkdocs build</code><a class="headerlink" href="#mkdocs-build" title="Permanent link">&para;</a></h4>
 <p>该命令会在本地构建MkDocs文档。运行该命令后，会在项目目录下生成<code>site</code>文件夹，html文件会存放在该文件夹中。注意，<code>site</code>里的文件在本地是不能正常跳转的，需要部署上线才能正常运行。我们可以将该文件夹放到对应的服务器上进行部署。</p>
 <h4 id="mkdocs-gh-deploy"><code>mkdocs gh-deploy</code><a class="headerlink" href="#mkdocs-gh-deploy" title="Permanent link">&para;</a></h4>
+<p>该命令会先自动构建项目文档，然后将<code>site</code>文件夹内的内容push到远程的github仓库，并在github pages上发布站点。要将当前项目文档与远程github仓库简历连接，需要先<code>git init</code>初始化当前项目，然后使用<code>git remote add origin https://github.com/&lt;repo_name&gt;.git</code>关联，随后使用该命令即可。</p>
 <h3 id="mkdocs_1">MkDocs扩展<a class="headerlink" href="#mkdocs_1" title="Permanent link">&para;</a></h3>
 <h2 id="_3">参考资料<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <div class="footnote">
