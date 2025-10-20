@@ -11,8 +11,10 @@
       
       
       
-        <link rel="prev" href="../mkdocs/mkdocs.html">
+        <link rel="prev" href="CUDA.html">
       
+      
+        <link rel="next" href="../mkdocs/mkdocs.html">
       
       
       <link rel="icon" href="../avator.ico">
@@ -20,7 +22,7 @@
     
     
       
-        <title>review - Memex By Yanbo Li</title>
+        <title>程序性能优化 - Memex By Yanbo Li</title>
       
     
     
@@ -61,6 +63,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#hpc" class="md-skip">
+          跳转至
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -92,7 +99,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              review
+              程序性能优化
             
           </span>
         </div>
@@ -593,18 +600,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
         
           
           <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
@@ -620,7 +629,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             HPC
@@ -634,7 +643,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../hpc/openmp.html" class="md-nav__link">
+      <a href="openmp.html" class="md-nav__link">
         
   
   
@@ -657,7 +666,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../hpc/CUDA.html" class="md-nav__link">
+      <a href="CUDA.html" class="md-nav__link">
         
   
   
@@ -677,10 +686,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../hpc/%E7%A8%8B%E5%BA%8F%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    程序性能优化
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="%E7%A8%8B%E5%BA%8F%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96.html" class="md-nav__link md-nav__link--active">
         
   
   
@@ -691,6 +722,158 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      程序为什么会慢？
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      如何查找程序瓶颈？
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="如何查找程序瓶颈？">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#linux" class="md-nav__link">
+    <span class="md-ellipsis">
+      Linux系统
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Linux系统">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#top" class="md-nav__link">
+    <span class="md-ellipsis">
+      top
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#time" class="md-nav__link">
+    <span class="md-ellipsis">
+      time
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#perf" class="md-nav__link">
+    <span class="md-ellipsis">
+      perf
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      性能优化原则
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      性能优化技巧
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="性能优化技巧">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vector" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vector
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Vector">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vector_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      预分配Vector的空间，减少内存重新分配
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#emplace_back-vs-push_back" class="md-nav__link">
+    <span class="md-ellipsis">
+      emplace_back() VS. push_back()
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      参考资料
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -775,20 +958,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
         
           
           <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
@@ -804,7 +985,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_9">
             <span class="md-nav__icon md-icon"></span>
             AI4Pathology
@@ -815,17 +996,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="review.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../AI4Pathology/review.html" class="md-nav__link">
         
   
   
@@ -836,7 +1010,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -866,6 +1039,148 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      程序为什么会慢？
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      如何查找程序瓶颈？
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="如何查找程序瓶颈？">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#linux" class="md-nav__link">
+    <span class="md-ellipsis">
+      Linux系统
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Linux系统">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#top" class="md-nav__link">
+    <span class="md-ellipsis">
+      top
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#time" class="md-nav__link">
+    <span class="md-ellipsis">
+      time
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#perf" class="md-nav__link">
+    <span class="md-ellipsis">
+      perf
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      性能优化原则
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      性能优化技巧
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="性能优化技巧">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vector" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vector
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Vector">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vector_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      预分配Vector的空间，减少内存重新分配
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#emplace_back-vs-push_back" class="md-nav__link">
+    <span class="md-ellipsis">
+      emplace_back() VS. push_back()
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      参考资料
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -884,9 +1199,117 @@
   
 
 
-  <h1>review</h1>
+<h1 id="hpc">HPC<a class="headerlink" href="#hpc" title="Permanent link">&para;</a></h1>
+<p><strong>Amdahl's Law</strong>:</p>
+<p>当我们对系统的某个部分加速时，其对系统整体性能的影响取决于该部分的重要性和加速程度。</p>
+<h2 id="_1">程序为什么会慢？<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>一般来说，一个程序主要在三个方面消耗资源：</p>
+<ul>
+<li>CPU时间 - 计算太多，算法效率低</li>
+<li>内存使用 - 频繁地申请、释放内存，内存泄漏</li>
+<li>I/O操作 - 频繁的文件读写、网络通信等</li>
+</ul>
+<h2 id="_2">如何查找程序瓶颈？<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h3 id="linux">Linux系统<a class="headerlink" href="#linux" title="Permanent link">&para;</a></h3>
+<h4 id="top"><code>top</code><a class="headerlink" href="#top" title="Permanent link">&para;</a></h4>
+<p><code>top</code>命令可以实时监控程序的CPU和内存使用情况</p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>top<span class="w"> </span>-p<span class="w"> </span><span class="k">$(</span>pgrep<span class="w"> </span>进程名<span class="k">)</span>
+</code></pre></div>
+<h4 id="time"><code>time</code><a class="headerlink" href="#time" title="Permanent link">&para;</a></h4>
+<p>Linux自带的<code>time</code>命令可以用来分析程序的运行时间构成：</p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span><span class="nb">time</span><span class="w"> </span>./my_program
+</code></pre></div>
+<p>执行后你会看到类似这样的输出：</p>
+<div class="highlight"><pre><span></span><code>real<span class="w">    </span>0m1.234s
+user<span class="w">    </span>0m1.000s
+sys<span class="w">     </span>0m0.234s
+</code></pre></div>
+<ul>
+<li><strong>real</strong>：实际经过的时间</li>
+<li><strong>user</strong>：CPU在用户态的执行时间</li>
+<li><strong>sys</strong>：CPU在内核态的执行时间</li>
+</ul>
+<p>如果<code>user</code>时间特别长，说明用户程序的执行时间太长（可能包括数学计算、逻辑判断、算法执行、内存操作等）；如果<code>sys</code>时间特别长，说明用户程序的系统调用太多（可能包括文件I/O、网络通信、内存分配、进程创建等）<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>。</p>
+<h4 id="perf"><code>perf</code><a class="headerlink" href="#perf" title="Permanent link">&para;</a></h4>
+<p><code>time</code>和<code>top</code>只能告诉你程序慢，但具体慢在哪个函数，还得靠专业工具。Linux下最强大的性能分析工具之一就是<code>perf</code>。</p>
+<p>perf安装：</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Ubuntu/Debian</span>
+$<span class="w"> </span>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>linux-tools-common<span class="w"> </span>linux-tools-generic
 
+<span class="c1"># CentOS/RHEL</span>
+$<span class="w"> </span>sudo<span class="w"> </span>yum<span class="w"> </span>install<span class="w"> </span>perf
+</code></pre></div>
+<p>perf使用：</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># 开发环境：从启动开始记录</span>
+$<span class="w"> </span>sudo<span class="w"> </span>perf<span class="w"> </span>record<span class="w"> </span>-g<span class="w"> </span>./slow_program
 
+<span class="c1"># 生产环境：对运行中程序采样30秒</span>
+$<span class="w"> </span>sudo<span class="w"> </span>perf<span class="w"> </span>record<span class="w"> </span>-p<span class="w"> </span>&lt;进程ID&gt;<span class="w"> </span>-g<span class="w"> </span>-F<span class="w"> </span><span class="m">99</span><span class="w"> </span>sleep<span class="w"> </span><span class="m">30</span>
+
+<span class="c1"># 分析结果</span>
+$<span class="w"> </span>perf<span class="w"> </span>report
+</code></pre></div>
+<p>开发环境用第一种方式，能看到程序从启动到结束的全过程；生产环境用第二种方式，不用重启服务就能采样数据。<code>perf report</code>会显示哪些函数最耗 CPU，直接指出问题所在。</p>
+<p>perf的输出有时候不够直观，这时可以使用火焰图（FlameGraph）来将结果可视化。</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># 先记录perf数据</span>
+$<span class="w"> </span>sudo<span class="w"> </span>perf<span class="w"> </span>record<span class="w"> </span>-p<span class="w"> </span>&lt;进程ID&gt;<span class="w"> </span>-g<span class="w"> </span>-F<span class="w"> </span><span class="m">99</span><span class="w"> </span>sleep<span class="w"> </span><span class="m">30</span>
+
+<span class="c1"># 导出数据</span>
+$<span class="w"> </span>perf<span class="w"> </span>script<span class="w"> </span>&gt;<span class="w"> </span>perf.out
+
+<span class="c1"># 用FlameGraph工具生成SVG图</span>
+$<span class="w"> </span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/brendangregg/FlameGraph.git
+$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>FlameGraph
+$<span class="w"> </span>./stackcollapse-perf.pl<span class="w"> </span>../perf.out<span class="w"> </span>&gt;<span class="w"> </span>../perf.folded
+$<span class="w"> </span>./flamegraph.pl<span class="w"> </span>../perf.folded<span class="w"> </span>&gt;<span class="w"> </span>../flamegraph.svg
+
+<span class="c1"># 使用 firefox 打开</span>
+$<span class="w"> </span>firefox<span class="w"> </span>flamegraph.svg
+</code></pre></div>
+<h2 id="_3">性能优化原则<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<ul>
+<li>由简入繁</li>
+</ul>
+<p>在性能优化中，不要刚一上手就使用复杂的工具，可以先用<code>top</code>、<code>time</code>等粗粒度的简单工具定位程序的瓶颈，找到问题所在后再细粒度地使用<code>perf</code>、<code>gperftools</code>、<code>Callgrind</code>等性能分析器。</p>
+<ul>
+<li>二八原则</li>
+</ul>
+<p>程序性能优化很难找到一个明确的上界，性能指标一般由具体业务决定。一般来说，程序80%的时间往往花在20%的代码上，因此，为了最高效率地满足业务需求，一定要优先优化瓶颈所在的20%的代码再去优化细枝末节，否则会事倍功半。</p>
+<ul>
+<li>不要过早优化</li>
+</ul>
+<p>正确的程序是性能优化的前提！一定要先保证程序能够正确地运行再考虑性能优化。</p>
+<h2 id="_4">性能优化技巧<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<h3 id="vector">Vector<a class="headerlink" href="#vector" title="Permanent link">&para;</a></h3>
+<h4 id="vector_1">预分配Vector的空间，减少内存重新分配<a class="headerlink" href="#vector_1" title="Permanent link">&para;</a></h4>
+<p>要了解这个优化技巧，首先我们需要熟悉C++中Vector的内存分配机制。对一个vector对象来说，其有两个属性：<code>capacity</code>和<code>size</code>。<code>capacity</code>描述了这个vector所能容纳的数据量，<code>size</code>描述了这个vector当前已经容纳的数据量。当vector要保存的数据超出了其<code>capacity</code>时，出于<strong>内存连续性</strong>要求和<strong>堆内存碎片</strong>的情况，vector会被重新分配一块新的内存并将旧内存中的数据复制到新内存中。vector通常按<strong>指数增长</strong>策略分配内存：分配的新内存的大小=旧内存大小×增长因子。其中，增长因子视编译器而定：GCC 2倍增长，MSVC 1.5倍增长。vector每次重新分配内存的成本可以分为以下四步：</p>
+<ul>
+<li>在堆上申请更大的连续空间</li>
+<li>将旧数据逐个复制到新空间</li>
+<li>调用析构函数销毁旧空间的元素</li>
+<li>归还旧内存块</li>
+</ul>
+<p>vector为程序员提供了调整<code>capacity</code>和<code>size</code>的接口。</p>
+<div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">vec</span><span class="p">;</span>
+
+<span class="n">vec</span><span class="p">.</span><span class="n">reserve</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span><span class="w">  </span><span class="c1">// 只分配内存，size() 仍为 0</span>
+<span class="c1">// capacity() = 100, size() = 0</span>
+
+<span class="n">vec</span><span class="p">.</span><span class="n">resize</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span><span class="w">   </span><span class="c1">// 分配内存并创建对象</span>
+<span class="c1">// capacity() &gt;= 100, size() = 100</span>
+</code></pre></div>
+<h4 id="emplace_back-vs-push_back">emplace_back() VS. push_back()<a class="headerlink" href="#emplace_back-vs-push_back" title="Permanent link">&para;</a></h4>
+<p><code>push_back()</code>会先在栈上构造一个临时对象，紧接着将临时对象拷贝到vector对应的内存空间，最后调用析构函数销毁临时对象。<code>emplace_back()</code>则直接在vector的对应内存空间构造对象，避免了拷贝和析构。</p>
+<p>对于一些简单的小对象来说，二者性能上并无差异，<code>push_back()</code>的代码可读性更强一些；但对于一些大型复杂对象，<code>emplace_back()</code>避免了代价昂贵的拷贝，在性能上更具优势。</p>
+<h2 id="_5">参考资料<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p><a href="https://www.cnblogs.com/xiaokang-coding/p/18801608">从菜鸟到高手：Linux C/C++程序性能分析实战指南！ - 江小康 - 博客园</a>&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
 
 
 
